@@ -23,7 +23,7 @@ public class Apple {
 
         Thread.sleep(100);
 
-        WebElement Privacy = driver.findElement(By.className("qc-cmp-button"));
+        WebElement Privacy = driver.findElement(By.xpath("//div[@id='qcCmpButtons']/button[@class='qc-cmp-button']"));
         Privacy.click();
 
         WebElement Search = driver.findElement(By.id("topsearch-text"));
