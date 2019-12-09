@@ -35,7 +35,7 @@ public class OnePlus {
             System.out.println("The Newsletter was not visible");
         }
 
-        WebElement StoreBtn = driver.findElement(By.id("family-slide-trigger"));
+        WebElement StoreBtn = driver.findElement(By.linkText("Store"));
         StoreBtn.click();
 
         WebDriverWait waits = new WebDriverWait(driver, 10);

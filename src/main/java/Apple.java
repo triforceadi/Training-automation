@@ -6,6 +6,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 
 public class Apple {
@@ -61,8 +62,21 @@ public class Apple {
         actions.perform();
         Differences.click();
 
-        js.executeScript("window.scrollBy(0,450)");
+        js.executeScript("window.scrollBy(0,2500)");
 
+        String iPhoneBattery = driver.findElement(By.xpath("//div[@id='specs-list']/table[12]/tbody/tr[1]/td[2]")).getText();
+        String ExpectediPBattery = "Non-removable Li-Ion 2658 mAh battery (10.13 Wh)";
+        assertEquals(iPhoneBattery, ExpectediPBattery);
+
+
+        String OnePlusBattery = driver.findElement(By.xpath("//div[@id='specs-list']/table[12]/tbody/tr[1]/td[3]")).getText();
+        String ExpectedOPBattery = "Non-removable Li-Po 3700 mAh battery";
+        assertEquals(OnePlusBattery, ExpectedOPBattery);
+
+
+        String SamsungBattery = driver.findElement(By.xpath("//div[@id='specs-list']/table[12]/tbody/tr[1]/td[4]")).getText();
+        String ExpectedSMBattery = "Non-removable Li-Ion 4100 mAh battery";
+        assertEquals(SamsungBattery, ExpectedSMBattery);
 
 
     }
