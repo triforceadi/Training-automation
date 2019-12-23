@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Parallel Tests">
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.test.aditza.Apple" />
+        </classes>
+    </test>
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.test.aditza.Apple" />
+        </classes>
+    </test>
+</suite>
