@@ -31,10 +31,12 @@ public class IMDB extends BaseTest {
         {
             WebElement MoreTitles = driver.findElement(By.linkText("More title matches"));
             MoreTitles.click();
+            Thread.sleep(500);
+            WebElement TitleMatches = driver.findElement(By.linkText("Star Wars: Episode IX - The Rise of Skywalker"));
+            TitleMatches.click();
         }
 
-        WebElement TitleMatches = driver.findElement(By.linkText("Star Wars: Episode IX - The Rise of Skywalker"));
-        TitleMatches.click();
+
 
         WebElement RatingCount = driver.findElement(By.cssSelector("[itemprop='ratingCount']"));
         RatingCount.click();
