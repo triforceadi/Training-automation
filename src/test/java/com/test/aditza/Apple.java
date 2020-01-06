@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Apple extends BaseTest {
-    @Test
     public void main() throws InterruptedException {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
