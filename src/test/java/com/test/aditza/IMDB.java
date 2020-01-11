@@ -3,16 +3,20 @@ package com.test.aditza;
 import com.test.aditza.base.BaseTest;
 import org.openqa.selenium.*;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class IMDB extends BaseTest {
-    @Test
+
+    @Test(priority = 0)
     public void main() throws InterruptedException {
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebDriverWait wait = new WebDriverWait(driver,10);
+
         driver.get("https://www.imdb.com/");
 
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         WebElement Search = driver.findElement(By.xpath("/html//input[@id='suggestion-search']"));
         Search.sendKeys("Star Wars");
@@ -31,11 +35,11 @@ public class IMDB extends BaseTest {
         {
             WebElement MoreTitles = driver.findElement(By.linkText("More title matches"));
             MoreTitles.click();
-            Thread.sleep(500);
-            WebElement TitleMatches = driver.findElement(By.linkText("Star Wars: Episode IX - The Rise of Skywalker"));
+
+            WebElement TitleMatches = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(By.linkText("Star Wars: Episode IX - The Rise of Skywalker")));
             TitleMatches.click();
         }
-
 
 
         WebElement RatingCount = driver.findElement(By.cssSelector("[itemprop='ratingCount']"));
@@ -46,8 +50,6 @@ public class IMDB extends BaseTest {
         String LastKnownScore = "6.9";
         Assert.assertEquals(Score, LastKnownScore);
         System.out.println("Current score is:" + " " + Score + " " + "Last known score is:" + " " + LastKnownScore);
-
-
 
     }
 

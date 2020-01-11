@@ -1,10 +1,7 @@
 package com.test.aditza.base;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 public class BaseTest {
 
@@ -16,13 +13,14 @@ public class BaseTest {
         BrowserDriverFactory factory = new BrowserDriverFactory(browser);
         driver = factory.createDriver();
 
+
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        driver.manage().window().maximize();
+
     }
 
     @AfterMethod(alwaysRun = true)
@@ -31,5 +29,4 @@ public class BaseTest {
         // Close browser
         driver.quit();
     }
-
 }

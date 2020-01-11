@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d757629-3059-47e8-96ab-285853d3179a" name="Default Changelist" comment="Base Test and BrowserDriver Factory">
+    <list default="true" id="7d757629-3059-47e8-96ab-285853d3179a" name="Default Changelist" comment="ChromeOptions and some cleanup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/Altex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/aditza/Altex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/aditza/Apple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/IMDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/aditza/IMDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/OnePlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/aditza/OnePlus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/aditza/base/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/aditza/base/BrowserDriverFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/geckodriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Training.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/aditza/Altex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/aditza/Apple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/aditza/IMDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/aditza/OnePlus.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,10 +37,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/IMDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,15 +88,17 @@
         <option value="$PROJECT_DIR$/src/main/java/Apple.java" />
         <option value="$PROJECT_DIR$/src/main/java/Calculus.java" />
         <option value="$PROJECT_DIR$/src/main/java/Altex.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/Altex.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/OnePlus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/Apple.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/RedditTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/aditza/base/OptionsManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/aditza/base/CapabilityFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/IMDB.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/Altex.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/OnePlus.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/test/aditza/Apple.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -79,10 +110,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2082" />
-    <option name="y" value="-9" />
-    <option name="width" value="1553" />
-    <option name="height" value="849" />
+    <option name="x" value="2347" />
+    <option name="y" value="45" />
+    <option name="width" value="1720" />
+    <option name="height" value="882" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -90,14 +121,73 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Training" type="b2602c69:ProjectViewProjectNode" />
               <item name="Training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aditza" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -106,7 +196,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578336353396" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578749568372" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/testng.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -215,46 +305,53 @@
       <option name="project" value="LOCAL" />
       <updated>1577092380088</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Moved some code in catch exception">
+      <created>1578336370026</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578336370026</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 07m 03s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 14h 23m 22s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 08m 07s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 14h 25m 43s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 12m 22s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 14h 28m 42s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 12m 49s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 14h 29m 43s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 15m 14s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 14h 30m 21s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 22m 03s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 15h 14m 28s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 34m 08s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 15h 18m 22s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 37m 25s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 15h 19m 33s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 38m 49s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 15h 27m 07s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Run_Suite - 2020.01.06 at 20h 39m 32s.xml">
+    <history-entry file="Run_Suite - 2020.01.11 at 15h 31m 49s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49882904" visible="true" weight="0.17315437" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49882904" visible="true" weight="0.17697228" />
       <window_info id="Structure" order="1" sideWeight="0.50117093" side_tool="true" weight="0.20201342" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -263,16 +360,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8060403" weight="0.34844193" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.804371" weight="0.22860238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.07790368" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5087248" side_tool="true" visible="true" weight="0.18838526" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49127516" visible="true" weight="0.18838526" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48791945" weight="0.3186969" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5138593" side_tool="true" visible="true" weight="0.31852654" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48880598" weight="0.18743229" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48614073" weight="0.31852654" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -281,6 +377,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -288,7 +385,9 @@
     <MESSAGE value="More asserts" />
     <MESSAGE value="wait until privacy banner appears" />
     <MESSAGE value="Base Test and BrowserDriver Factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base Test and BrowserDriver Factory" />
+    <MESSAGE value="Moved some code in catch exception" />
+    <MESSAGE value="ChromeOptions and some cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="ChromeOptions and some cleanup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Temp/selenium-logo-c1d6f4654a0c8f8bef745f71b4e22836224aabc2116f405ef511cd79c48f2947.png" />
@@ -321,16 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/advanced-selenium-webdriver-master(1)/advanced-selenium-webdriver-master/PART 6/Lecture 49/advanced-selenium-webdriver/src/main/java/com/herokuapp/theinternet/pages/WelcomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153" />
@@ -341,38 +430,7 @@
         <state relative-caret-position="-51" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/advanced-selenium-webdriver-master(1)/advanced-selenium-webdriver-master/PART 6/Lecture 49/advanced-selenium-webdriver/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/Altex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/RedditTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/Apple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/RedditTest.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -380,17 +438,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/aditza/base/CapabilityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#201#202#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/aditza/base/OptionsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="10" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/aditza/base/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/Altex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -399,18 +478,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/OnePlus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="130">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/Apple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/advanced-selenium-webdriver-master(1)/advanced-selenium-webdriver-master/PART 6/Lecture 49/advanced-selenium-webdriver/src/main/java/com/herokuapp/theinternet/base/TestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/advanced-selenium-webdriver-master(1)/advanced-selenium-webdriver-master/PART 6/Lecture 49/advanced-selenium-webdriver/src/main/java/com/herokuapp/theinternet/base/TestUtilities.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/advanced-selenium-webdriver-master(1)/advanced-selenium-webdriver-master/PART 6/Lecture 49/advanced-selenium-webdriver/src/main/java/com/herokuapp/theinternet/pages/BasePageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/test/aditza/IMDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

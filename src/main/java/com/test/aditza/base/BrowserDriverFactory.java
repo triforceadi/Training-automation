@@ -2,6 +2,7 @@ package com.test.aditza.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserDriverFactory {
@@ -14,13 +15,16 @@ public class BrowserDriverFactory {
     }
 
     public WebDriver createDriver() {
-        // Create driver
         System.out.println("Create driver: " + browser);
 
         switch (browser) {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-                driver.set(new ChromeDriver());
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--start-maximized");
+                options.addArguments("--ignore-certificate-errors");
+                options.addArguments("--disable-popup-blocking");
+                driver.set(new ChromeDriver(options));
                 break;
 
             case "firefox":

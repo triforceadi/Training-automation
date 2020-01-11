@@ -6,10 +6,13 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Apple extends BaseTest {
+
+    @Test(priority = 1) @Ignore
     public void main() throws InterruptedException {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -57,6 +60,7 @@ public class Apple extends BaseTest {
         actions.moveToElement(Differences);
         actions.perform();
         Differences.click();
+
 
         js.executeScript("window.scrollBy(0,500)");
 

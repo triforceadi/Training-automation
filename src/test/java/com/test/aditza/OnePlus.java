@@ -1,25 +1,23 @@
 package com.test.aditza;
 
+import com.test.aditza.base.BaseTest;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
 
-import javax.swing.text.View;
-import java.util.concurrent.TimeUnit;
 
 // As a visitor to the site I should be able to add and remove items from the cart
 
-public class OnePlus {
+public class OnePlus extends BaseTest {
 
+    @Test(priority = 2) @Ignore
     public void main() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
 
         driver.get("https://www.oneplus.com/ro");
 

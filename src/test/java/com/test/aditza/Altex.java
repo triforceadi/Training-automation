@@ -1,28 +1,24 @@
 package com.test.aditza;
 
-import org.junit.Test;
+import com.test.aditza.base.BaseTest;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Ignore;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 
-public class Altex {
+public class Altex extends BaseTest {
 
+    @Test(priority = 3) @Ignore
     public void main() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
         driver.get("https://www.altex.ro");
 
-        driver.manage().window().maximize();
 
         WebElement SearchBar = driver.findElement(By.xpath("/html//div[@id='SearchContainer']//input"));
         SearchBar.sendKeys("iPhone 11 Pro");
