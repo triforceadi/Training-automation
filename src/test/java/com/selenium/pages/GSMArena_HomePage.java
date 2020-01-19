@@ -22,6 +22,21 @@ public class GSMArena_HomePage {
     @FindBy(xpath = "/html//form[@id='topsearch']//div[@class='phone-results']/ul//a[@href='apple_iphone_xs-9318.php']")
     private WebElement iPhoneResult;
 
+    @FindBy(id = "login-active")
+    private WebElement LoginIcon;
+
+    @FindBy(id = "email")
+    private WebElement EmailField;
+
+    @FindBy(id = "upass")
+    private WebElement PasswordField;
+
+    @FindBy(id = "nick-submit")
+    private WebElement SubmitLogin;
+
+    @FindBy(id = "login-popup2")
+    private WebElement LoginPopup;
+
     public GSMArena_HomePage(WebDriver driver){
         this.driver=driver;
         driver.get(HomePage_URL);
@@ -42,5 +57,23 @@ public class GSMArena_HomePage {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOf(iPhoneResult));
         iPhoneResult.click();
+    }
+
+    public void ClickonLoginIcon() {
+        LoginIcon.click();
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOf(LoginPopup));
+
+    }
+    public void SendEmail(String email) {
+        EmailField.clear();
+        EmailField.sendKeys(email);
+    }
+    public void SendPassword(String password) {
+        PasswordField.clear();
+        PasswordField.sendKeys(password);
+    }
+    public void SubmitData() {
+        SubmitLogin.click();
     }
 }

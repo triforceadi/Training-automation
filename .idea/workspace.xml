@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d757629-3059-47e8-96ab-285853d3179a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_ComparePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java" afterDir="false" />
+    <list default="true" id="7d757629-3059-47e8-96ab-285853d3179a" name="Default Changelist" comment="Converted one of the test to a page object model + some minor cleanup">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_FailedLoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_NegativeLoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium/tests/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/aditza/base/BrowserDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/selenium/tests/base/BrowserDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/Altex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium/tests/Altex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/Apple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/IMDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium/tests/IMDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/aditza/OnePlus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium/tests/OnePlus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/selenium/pages/GSMArena_HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/selenium/pages/GSMArena_HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/selenium/tests/GSMArena_BatteryComparisonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/selenium/tests/GSMArena_BatteryComparisonTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,22 +29,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            <state relative-caret-position="366">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
               <folding>
-                <element signature="n#build#0;n#project#0;n#!!top" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#865#866#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2200#2201#0" expanded="true" />
+                <element signature="e#2235#2236#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,13 +104,15 @@
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/tests/Apple.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/tests/IMDB.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_ComparePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/selenium/tests/base/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_FailedLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_NegativeLoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java" />
       </list>
     </option>
   </component>
@@ -219,7 +228,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579445285212" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579448826822" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutomationPractice" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -339,27 +348,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_Suite - 2020.01.19 at 16h 09m 09s.xml">
-      <configuration name="Run Suite" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_Suite - 2020.01.19 at 16h 10m 06s.xml">
-      <configuration name="Run Suite" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_Suite - 2020.01.19 at 16h 11m 29s.xml">
-      <configuration name="Run Suite" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_Suite - 2020.01.19 at 16h 14m 01s.xml">
-      <configuration name="Run Suite" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_Suite - 2020.01.19 at 16h 14m 32s.xml">
-      <configuration name="Run Suite" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_Suite - 2020.01.19 at 16h 28m 21s.xml">
-      <configuration name="Run Suite" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Run_Suite - 2020.01.19 at 16h 33m 31s.xml">
-      <configuration name="Run Suite" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Run_Suite - 2020.01.19 at 16h 38m 40s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
@@ -369,12 +357,33 @@
     <history-entry file="Run_Suite - 2020.01.19 at 16h 42m 47s.xml">
       <configuration name="Run Suite" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="Run_Suite - 2020.01.19 at 17h 11m 09s.xml">
+      <configuration name="Run Suite" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Run_Suite - 2020.01.19 at 17h 12m 07s.xml">
+      <configuration name="Run Suite" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Run_Suite - 2020.01.19 at 17h 22m 20s.xml">
+      <configuration name="Run Suite" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Run_Suite - 2020.01.19 at 17h 26m 08s.xml">
+      <configuration name="Run Suite" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Run_Suite - 2020.01.19 at 17h 27m 36s.xml">
+      <configuration name="Run Suite" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Run_Suite - 2020.01.19 at 17h 37m 41s.xml">
+      <configuration name="Run Suite" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Run_Suite - 2020.01.19 at 17h 40m 18s.xml">
+      <configuration name="Run Suite" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49882904" visible="true" weight="0.18869936" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49882904" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" sideWeight="0.50117093" side_tool="true" weight="0.20201342" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -383,15 +392,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80277187" weight="0.20585048" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.2751896" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.07790368" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5117271" side_tool="true" visible="true" weight="0.18743229" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48827294" visible="true" weight="0.18743229" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48400852" weight="0.31852654" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.19829424" side_tool="true" visible="true" weight="0.2751896" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48827294" weight="0.18743229" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.48294243" weight="0.31852654" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -411,7 +420,8 @@
     <MESSAGE value="Base Test and BrowserDriver Factory" />
     <MESSAGE value="Moved some code in catch exception" />
     <MESSAGE value="ChromeOptions and some cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="ChromeOptions and some cleanup" />
+    <MESSAGE value="Converted one of the test to a page object model + some minor cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Converted one of the test to a page object model + some minor cleanup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Temp/selenium-logo-c1d6f4654a0c8f8bef745f71b4e22836224aabc2116f405ef511cd79c48f2947.png" />
@@ -497,32 +507,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/tests/base/BrowserDriverFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/tests/base/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_ComparePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -539,42 +527,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/tests/Altex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -587,6 +543,78 @@
           <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding>
             <element signature="n#build#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/selenium/tests/base/BrowserDriverFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_ComparePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_FailedLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_NegativeLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#2235#2236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/tests/GSMArena_BatteryComparisonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/selenium/pages/GSMArena_iPhoneXSPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
           </folding>
         </state>
       </provider>

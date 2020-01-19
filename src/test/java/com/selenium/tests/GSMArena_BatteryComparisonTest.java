@@ -6,7 +6,7 @@ import com.selenium.pages.GSMArena_iPhoneXSPage;
 import com.selenium.pages.GSMArena_ComparePage;
 import org.openqa.selenium.*;
 import org.testng.annotations.Test;
-import static org.junit.Assert.assertEquals;
+
 
 public class GSMArena_BatteryComparisonTest extends BaseTest {
 
@@ -22,13 +22,10 @@ public class GSMArena_BatteryComparisonTest extends BaseTest {
         home.ClickonSearchBar();
         home.ClickonResult();
 
-        //Assert that we are on the right phone
-        String actualTitle = driver.getTitle();
-        String expectedTitle = "Apple iPhone XS - Full phone specifications";
-        assertEquals(actualTitle, expectedTitle);
-
         //Create object of the iPhone XS page
         GSMArena_iPhoneXSPage iPhone = new GSMArena_iPhoneXSPage(driver);
+
+        iPhone.AssertPageTitle();
 
         iPhone.CompareButton();
 
