@@ -25,6 +25,9 @@
             </plugin>
         </plugins>
     </build>
+
+    <!--Selenium, TestNG & JUnit-->
+
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -47,6 +50,5 @@
             <version>4.4</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 </project>
