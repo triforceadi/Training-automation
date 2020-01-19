@@ -5,13 +5,7 @@
     <test name="Chrome Test">
         <parameter name="browser" value="chrome"/>
         <packages>
-            <package name="com.selenium.tests" />
+            <package name="com.selenium.tests"/>
         </packages>
     </test>
-    <!--test name="Firefox Test">
-        <parameter name="browser" value="firefox"/>
-        <packages>
-            <package name="com.test.aditza" />
-        </packages>
-    </test-->
 </suite>

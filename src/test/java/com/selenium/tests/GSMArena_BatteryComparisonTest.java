@@ -5,6 +5,7 @@ import com.selenium.pages.GSMArena_HomePage;
 import com.selenium.pages.GSMArena_iPhoneXSPage;
 import com.selenium.pages.GSMArena_ComparePage;
 import org.openqa.selenium.*;
+
 import org.testng.annotations.Test;
 
 
