@@ -4,8 +4,18 @@
 <suite name="Running Tests">
     <test name="Chrome Test">
         <parameter name="browser" value="chrome"/>
-        <packages>
-            <package name="com.selenium.tests"/>
-        </packages>
+        <groups>
+            <run>
+                <include name="GSMArena"/>
+                <include name="IMDB"/>
+                <include name="Backend"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.selenium.tests.GSMArena_BatteryComparisonTest"/>
+            <class name="com.selenium.tests.GSMArena_NegativeLoginTest"/>
+            <class name="com.selenium.tests.IMDB_StarWarsTest"/>
+            <class name="com.restassured.Tests"/>
+        </classes>
     </test>
 </suite>

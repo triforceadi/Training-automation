@@ -6,12 +6,13 @@ import com.selenium.pages.GSMArena_iPhoneXSPage;
 import com.selenium.pages.GSMArena_ComparePage;
 import org.openqa.selenium.*;
 
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 
 public class GSMArena_BatteryComparisonTest extends BaseTest {
 
-    @Test(priority = 0)
+    @Test(groups = {"GSMArena"})
     public void main() {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -33,9 +34,9 @@ public class GSMArena_BatteryComparisonTest extends BaseTest {
         //Create object of the Compare page
         GSMArena_ComparePage Compare = new GSMArena_ComparePage(driver);
 
-        Compare.SearchforOnePlus();
+        Compare.SearchforOnePlus("OnePlus 6T");
 
-        Compare.SearchforGalaxy();
+        Compare.SearchforGalaxy("Samsung Galaxy S10+");
 
         Compare.ClickonDifferences();
 

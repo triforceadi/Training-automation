@@ -5,12 +5,13 @@ import com.selenium.pages.IMDB_MovieTitlePage;
 import com.selenium.pages.IMDB_ResultsPage;
 import com.selenium.tests.base.BaseTest;
 import org.junit.Assert;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 
 public class IMDB_StarWarsTest extends BaseTest {
 
-    @Test(priority = 1)
+    @Test(groups = {"IMDB"})
     public void main() {
 
         //Create object of HomePage class

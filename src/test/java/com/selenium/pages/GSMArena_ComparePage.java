@@ -45,18 +45,18 @@ public class GSMArena_ComparePage {
         PageFactory.initElements(driver,this);
     }
 
-    public void SearchforOnePlus() {
+    public void SearchforOnePlus(String OP) {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         SearchRowTwo.click();
-        SearchRowTwo.sendKeys("OnePlus 6T");
+        SearchRowTwo.sendKeys(OP);
         wait.until(ExpectedConditions.visibilityOf(OnePlus));
         OnePlus.click();
     }
 
-    public void SearchforGalaxy() {
+    public void SearchforGalaxy(String Samsung) {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         SearchRowThree.click();
-        SearchRowThree.sendKeys("Samsung Galaxy S10+");
+        SearchRowThree.sendKeys(Samsung);
         wait.until(ExpectedConditions.visibilityOf(GalaxyS10Plus));
         GalaxyS10Plus.click();
     }
