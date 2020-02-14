@@ -1,59 +1,68 @@
 package com.restassured;
-import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import org.json.simple.JSONObject;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import restassured.config.BaseConfig;
+import restassured.config.CommentsEndpoint;
+import restassured.config.PostsEndpoint;
+
 import static io.restassured.RestAssured.*;
 
-public class Tests {
+public class Tests extends BaseConfig {
 
     @Test(groups = {"Backend"}, priority = 0)
-    public void PostResource() {
-        // Resource is not really updated on the server but it will be faked in the name of testing. Source: https://jsonplaceholder.typicode.com/
-        baseURI="https://jsonplaceholder.typicode.com/";
-        RequestSpecification httpRequest = RestAssured.given();
+    public void PostACat() {
+    PostsEndpoint jsonplaceholder = new PostsEndpoint("animal","cat","2","2");
 
-        httpRequest.header("Content-type", "application/json; charset=UTF-8");
-        JSONObject requestParams = new JSONObject();
-        requestParams.put("title","animal");
-        requestParams.put("body","cat");
-        requestParams.put("userId","2");
-        httpRequest.body(requestParams.toJSONString());
-        Response response = httpRequest.post("/posts/");
+    given().
+            body(jsonplaceholder).
+    when().
+            post("/posts/").
+    then().
+            statusCode(201);
+    }
 
-        String responseBody = response.getBody().asString();
-        System.out.println("PostResourceResponse:" + responseBody);
+    @Test(groups = {"Backend"}, priority = 0)
+    public void PostADog() {
+        PostsEndpoint jsonplaceholder = new PostsEndpoint("animal","dog","3","3");
 
-        int ActualStatusCode = response.getStatusCode();
-        int ExpectedActualCode = 201;
-        Assert.assertEquals(ActualStatusCode,ExpectedActualCode);
+        given().
+                body(jsonplaceholder).
+        when().
+                post("/posts/").
+        then().
+                statusCode(201);
     }
 
     @Test(groups = {"Backend"}, priority = 1)
     public void GetResource() {
-        // The resource that it gets is not the one above, it is a fake one provided by: https://jsonplaceholder.typicode.com/
-        baseURI="https://jsonplaceholder.typicode.com/";
-        RequestSpecification httpRequest = RestAssured.given();
-        Response response = httpRequest.request(Method.GET,"/posts/2");
-
-        String responseBody = response.getBody().asString();
-        System.out.println("GetResourceBody:" + responseBody);
-
-        Assert.assertTrue(responseBody.contains("id\": 2"));
-        Assert.assertTrue(responseBody.contains("userId\": 1"));
+        Response response = get("/posts/2");
+        String id = response.path("$.id");
+        System.out.println(id);
+        int Status = response.statusCode();
+        int ExpectedStatus = 200;
+        Assert.assertEquals(Status, ExpectedStatus);
     }
 
     @Test(groups = {"Backend"}, priority = 2)
     public void DeleteResource() {
-        // The resource will be faked as being deleted
-        baseURI="https://jsonplaceholder.typicode.com/";
-        RequestSpecification DeleteResource = RestAssured.given();
-        Response response =  DeleteResource.request(Method.DELETE,"posts/2");
-        int ActualStatusCode = response.getStatusCode();
-        System.out.println("StatusCode of DeleteResource:" + " " + ActualStatusCode);
+        given().
+
+        when().
+                delete("/posts/2").
+        then().
+                statusCode(200);
+    }
+
+    @Test
+    public void PutResource() {
+        CommentsEndpoint putResource = new CommentsEndpoint("1","2","Rick and Morty","morty@rick.com","adventure time");
+        given().
+                body(putResource).
+        when().
+                put("comments/2").
+        then().
+                statusCode(200);
     }
 
 }

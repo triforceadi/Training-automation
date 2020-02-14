@@ -1,10 +1,11 @@
 package com.selenium.pages;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.FindBy;
+
 import org.openqa.selenium.support.PageFactory;
 
-import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
+
 
 public class IMDB_MovieTitlePage {
     private WebDriver driver;

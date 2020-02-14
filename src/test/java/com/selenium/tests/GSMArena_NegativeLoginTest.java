@@ -2,8 +2,7 @@ package com.selenium.tests;
 
 import com.selenium.pages.GSMArena_FailedLoginPage;
 import com.selenium.pages.GSMArena_HomePage;
-import com.selenium.tests.base.BaseTest;
-import org.testng.annotations.Ignore;
+import selenium.config.BaseTest;
 import org.testng.annotations.Test;
 
 public class GSMArena_NegativeLoginTest extends BaseTest {

@@ -4,13 +4,6 @@
 <suite name="Running Tests">
     <test name="Chrome Test">
         <parameter name="browser" value="chrome"/>
-        <groups>
-            <run>
-                <include name="GSMArena"/>
-                <include name="IMDB"/>
-                <include name="Backend"/>
-            </run>
-        </groups>
         <classes>
             <class name="com.selenium.tests.GSMArena_BatteryComparisonTest"/>
             <class name="com.selenium.tests.GSMArena_NegativeLoginTest"/>

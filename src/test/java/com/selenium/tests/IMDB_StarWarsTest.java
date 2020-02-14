@@ -3,9 +3,8 @@ package com.selenium.tests;
 import com.selenium.pages.IMDB_HomePage;
 import com.selenium.pages.IMDB_MovieTitlePage;
 import com.selenium.pages.IMDB_ResultsPage;
-import com.selenium.tests.base.BaseTest;
-import org.junit.Assert;
-import org.testng.annotations.Ignore;
+import org.testng.Assert;
+import selenium.config.BaseTest;
 import org.testng.annotations.Test;
 
 

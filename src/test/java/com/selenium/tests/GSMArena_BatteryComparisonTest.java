@@ -1,12 +1,12 @@
 package com.selenium.tests;
 
-import com.selenium.tests.base.BaseTest;
+import selenium.config.BaseTest;
 import com.selenium.pages.GSMArena_HomePage;
 import com.selenium.pages.GSMArena_iPhoneXSPage;
 import com.selenium.pages.GSMArena_ComparePage;
 import org.openqa.selenium.*;
 
-import org.testng.annotations.Ignore;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 

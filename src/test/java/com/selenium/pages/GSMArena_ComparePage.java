@@ -7,10 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.PageFactory;
-import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 public class GSMArena_ComparePage {
     private WebDriver driver;
+
 
     @FindBy(id = "sSearch2")
     private WebElement SearchRowTwo;
@@ -47,6 +48,7 @@ public class GSMArena_ComparePage {
 
     public void SearchforOnePlus(String OP) {
         WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOf(SearchRowTwo));
         SearchRowTwo.click();
         SearchRowTwo.sendKeys(OP);
         wait.until(ExpectedConditions.visibilityOf(OnePlus));
