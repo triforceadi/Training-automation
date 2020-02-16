@@ -5,9 +5,8 @@
     <test name="Chrome Test">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.selenium.tests.GSMArena_BatteryComparisonTest"/>
-            <class name="com.selenium.tests.GSMArena_NegativeLoginTest"/>
-            <class name="com.selenium.tests.IMDB_StarWarsTest"/>
+            <class name="com.selenium.tests.LoginTests"/>
+            <class name="com.selenium.tests.CheckoutTests"/>
             <class name="com.restassured.Tests"/>
         </classes>
     </test>

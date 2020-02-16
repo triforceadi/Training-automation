@@ -28,7 +28,6 @@ public class PostsEndpoint {
         this.id = id;
     }
 
-
     public String getTitle()
     {
         return title;

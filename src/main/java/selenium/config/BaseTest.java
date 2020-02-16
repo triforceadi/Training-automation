@@ -12,7 +12,6 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
